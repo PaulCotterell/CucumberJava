@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage('Run Tests') {
       steps {
+        sh "apt-get install -yq libglib2.0-0"
         sh './mvnw clean test'
       }
       post {
