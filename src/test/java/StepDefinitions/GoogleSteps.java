@@ -28,9 +28,7 @@ public class GoogleSteps {
 		System.setProperty("webdriver.chrome.whitelistedIps", "");
 		WebDriverManager.chromedriver().setup();
 		final ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.addArguments("--headless");
-		chromeOptions.addArguments("--disable-dev-shm-usage");
-		chromeOptions.addArguments("--verbose");
+		chromeOptions.addArguments("--headless", "--disable-dev-shm-usage", "--no-sandbox");
 		driver = new ChromeDriver(chromeOptions);
 		driver.get("https://google.com");
 	}
