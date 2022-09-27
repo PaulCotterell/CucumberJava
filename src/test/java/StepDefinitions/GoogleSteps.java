@@ -32,7 +32,7 @@ public class GoogleSteps {
 		chromeOptions.addArguments("--disable-dev-shm-usage");
 		chromeOptions.addArguments("--verbose");
 		driver = new ChromeDriver(chromeOptions);
-		driver.get("https://google.com");
+		//driver.get("https://google.com");
 	}
 	
 	@When("I search for {string}")
