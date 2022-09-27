@@ -31,7 +31,7 @@ public class GoogleSteps {
 		chromeOptions.addArguments("--headless");
 		chromeOptions.addArguments("--disable-dev-shm-usage");
 		chromeOptions.addArguments("--verbose");
-		driver = new ChromeDriver(chromeOptions);
+		//driver = new ChromeDriver(chromeOptions);
 		//driver.get("https://google.com");
 	}
 	
