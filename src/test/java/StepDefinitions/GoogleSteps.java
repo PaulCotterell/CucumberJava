@@ -13,6 +13,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 //import pageObjects.LoginPage;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class GoogleSteps {
 	
@@ -23,6 +25,7 @@ public class GoogleSteps {
 	public void i_am_on_the_google_search_page() {
 		//System.out.println(System.getProperty("user.dir"));
 		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/resources/drivers/chromedriver105");
+		WebDriverManager.chromedriver().setup();
 		final ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--headless");
 		driver = new ChromeDriver(chromeOptions);
