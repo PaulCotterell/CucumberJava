@@ -21,8 +21,8 @@ public class GoogleSteps {
 	
 	@Given("I am on the Google search page")
 	public void i_am_on_the_google_search_page() {
-		System.out.println(System.getProperty("user.dir"));
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/resources/drivers/chromedriver105");
+		//System.out.println(System.getProperty("user.dir"));
+		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/resources/drivers/chromedriver105");
 		final ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--headless");
 		driver = new ChromeDriver(chromeOptions);
