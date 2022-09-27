@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 		features="src/test/resources/Features", 
 		glue={"StepDefinitions"}, 
 		monochrome=true, 
-		plugin={"pretty", "html:target/HtmlReports"}
+		plugin={"pretty", "json:target/cucumber.json"}
 		)
 public class TestRunner {
 
