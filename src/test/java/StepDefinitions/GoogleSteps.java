@@ -29,6 +29,7 @@ public class GoogleSteps {
 		WebDriverManager.chromedriver().setup();
 		final ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--headless");
+		chromeOptions.addArguments("--disable-dev-shm-usage");
 		driver = new ChromeDriver(chromeOptions);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
