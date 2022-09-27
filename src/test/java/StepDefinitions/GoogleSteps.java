@@ -32,10 +32,7 @@ public class GoogleSteps {
 		chromeOptions.addArguments("--disable-dev-shm-usage");
 		chromeOptions.addArguments("--verbose");
 		driver = new ChromeDriver(chromeOptions);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		
-		driver.navigate().to("https://google.com");
+		driver.get("https://google.com");
 	}
 	
 	@When("I search for {string}")
