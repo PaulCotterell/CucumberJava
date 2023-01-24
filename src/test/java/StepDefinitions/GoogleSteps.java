@@ -36,7 +36,7 @@ public class GoogleSteps {
 	@When("I search for {string}")
 	public void i_search_for(String search) {
 		//accept cookies
-		driver.findElement(By.name("btnK")).click();
+		//driver.findElement(By.name("btnK")).click();
 		driver.findElement(By.name("q")).sendKeys(search);
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);		
 	}
