@@ -17,7 +17,7 @@ pipeline {
               importFilePath: 'target/surefire-reports/*.xml', 
               importToSameExecution: 'true', 
               projectKey: 'OPSW', 
-              serverInstance: '2c67d48e-a778-4476-b5af-2810f9bdbb9b'
+              serverInstance: '5e63abe3-7319-4bf6-9d00-c792564fa2ab'
             ]
           )
       }
